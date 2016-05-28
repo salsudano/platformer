@@ -1,0 +1,33 @@
+{
+	"Default":
+	{
+		"Display":
+		{
+			"Resolution": 
+			{ 
+				"X": 800, 
+				"Y": 600 
+			},
+			"Fullscreen": "false",
+			"WindowBorder": "Bordered",
+			"VerticalSync": "true",
+			"FramrateLimit": 60
+		},
+		"Audio":
+		{
+			"Volume" : 100
+		},
+		"Debug":
+		{
+			"Settings": 
+			{
+				"Load": "true",
+				"Save": "true",
+				"Get": "true",
+				"Set": "true",
+				"Add": "true"
+			},
+			"ObjectRect": "true"
+		}
+	}
+}

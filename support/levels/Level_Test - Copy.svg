@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.3, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="1000px" height="500px" viewBox="0 0 1000 500" enable-background="new 0 0 1000 500" xml:space="preserve">
+<g id="Foreground">
+</g>
+<g id="Platforms">
+	
+		<rect id="Ground_1_" y="463.5" fill="#633814" stroke="#231F20" stroke-width="5" stroke-miterlimit="10" width="1000" height="36.5"/>
+	<rect id="rightBlueWall" x="967.5" fill="#0381A9" stroke="#282972" stroke-miterlimit="10" width="37" height="463.5"/>
+	<rect id="leftRedWall" fill="#A81E22" width="52.5" height="463.5"/>
+</g>
+<g id="Bounds">
+	<rect id="PlayerBounds" x="13.763" y="14.421" fill="none" width="924.737" height="471.711"/>
+</g>
+<g id="Background_1_">
+	<g id="Clouds_1_">
+	</g>
+</g>
+<g id="Background_4_">
+	<g id="Clouds_4_">
+	</g>
+</g>
+<g id="Background_3_">
+	<g id="Clouds_3_">
+	</g>
+</g>
+</svg>

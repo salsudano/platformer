@@ -1,0 +1,174 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{91651DE3-36B1-4D4A-83B4-EF25DCF7281B}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>engine</RootNamespace>
+    <ProjectName>engine</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v140</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <PlatformToolset>v110</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)\vs_output\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>vs_intermediate\$(Configuration)_$(Platform)\</IntDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)\vs_output\$(ProjectName)\$(Configuration)\</OutDir>
+    <IntDir>vs_intermediate\$(Configuration)_$(Platform)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\src\;$(SolutionDir)\..\libraries\SFML_2_3_2\include\;$(SolutionDir)\..\libraries\libxml2_2_7_8_win32\include\;$(SolutionDir)\..\libraries\iconv_1_9_2_win32\include\;$(SolutionDir)\..\libraries\boost_1_61_0\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\libraries\SFML_2_3_2\lib\;$(SolutionDir)\..\libraries\libxml2_2_7_8_win32\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio-d.lib;sfml-graphics-d.lib;sfml-main-d.lib;sfml-network-d.lib;sfml-system-d.lib;sfml-window-d.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(SolutionDir)\..\src\;$(SolutionDir)\..\libraries\SFML_2point1\include\;$(SolutionDir)\..\libraries\libxml2_2_7_8_win32\include\;$(SolutionDir)\..\libraries\iconv_1_9_2_win32\include\;$(SolutionDir)\..\libraries\boost_1_57_0\</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(SolutionDir)\..\libraries\SFML_2point1\lib\;$(SolutionDir)\..\libraries\libxml2_2_7_8_win32\lib\</AdditionalLibraryDirectories>
+      <AdditionalDependencies>sfml-audio.lib;sfml-graphics.lib;sfml-main.lib;sfml-network.lib;sfml-system.lib;sfml-window.lib;libxml2.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\application.cpp" />
+    <ClCompile Include="..\..\src\application_settings.cpp" />
+    <ClCompile Include="..\..\src\camera.cpp" />
+    <ClCompile Include="..\..\src\character_ai_states.cpp" />
+    <ClCompile Include="..\..\src\character_controllable_states.cpp" />
+    <ClCompile Include="..\..\src\character_input_component.cpp" />
+    <ClCompile Include="..\..\src\character_object.cpp" />
+    <ClCompile Include="..\..\src\character_states.cpp" />
+    <ClCompile Include="..\..\src\component.cpp" />
+    <ClCompile Include="..\..\src\data_manager.cpp" />
+    <ClCompile Include="..\..\src\game.cpp" />
+    <ClCompile Include="..\..\src\game_object.cpp" />
+    <ClCompile Include="..\..\src\inactive_object.cpp" />
+    <ClCompile Include="..\..\src\inactive_states.cpp" />
+    <ClCompile Include="..\..\src\interactive_object.cpp" />
+    <ClCompile Include="..\..\src\interactive_states.cpp" />
+    <ClCompile Include="..\..\src\level_data.cpp" />
+    <ClCompile Include="..\..\src\level_object.cpp" />
+    <ClCompile Include="..\..\src\menu_data.cpp" />
+    <ClCompile Include="..\..\src\physics_component.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\shape_object.cpp" />
+    <ClCompile Include="..\..\src\systeminfo.cpp" />
+    <ClCompile Include="..\..\src\graphics_manager.cpp" />
+    <ClCompile Include="..\..\src\util\svg_defs.cpp" />
+    <ClCompile Include="..\..\src\util\xml_defs.cpp" />
+    <ClCompile Include="..\..\src\window_event_manager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\application.h" />
+    <ClInclude Include="..\..\src\application_settings.h" />
+    <ClInclude Include="..\..\src\camera.h" />
+    <ClInclude Include="..\..\src\character_actions.h" />
+    <ClInclude Include="..\..\src\character_ai_states.h" />
+    <ClInclude Include="..\..\src\character_controllable_states.h" />
+    <ClInclude Include="..\..\src\character_input_component.h" />
+    <ClInclude Include="..\..\src\character_object.h" />
+    <ClInclude Include="..\..\src\character_states.h" />
+    <ClInclude Include="..\..\src\character_state_component.h" />
+    <ClInclude Include="..\..\src\component.h" />
+    <ClInclude Include="..\..\src\data_defs.h" />
+    <ClInclude Include="..\..\src\data_manager.h" />
+    <ClInclude Include="..\..\src\game.h" />
+    <ClInclude Include="..\..\src\game_object.h" />
+    <ClInclude Include="..\..\src\game_object_defs.h" />
+    <ClInclude Include="..\..\src\inactive_object.h" />
+    <ClInclude Include="..\..\src\inactive_states.h" />
+    <ClInclude Include="..\..\src\input_component.h" />
+    <ClInclude Include="..\..\src\interactive_object.h" />
+    <ClInclude Include="..\..\src\interactive_states.h" />
+    <ClInclude Include="..\..\src\level_data.h" />
+    <ClInclude Include="..\..\src\level_object.h" />
+    <ClInclude Include="..\..\src\menu_data.h" />
+    <ClInclude Include="..\..\src\object_shape.h" />
+    <ClInclude Include="..\..\src\object_state.h" />
+    <ClInclude Include="..\..\src\object_style.h" />
+    <ClInclude Include="..\..\src\physics_component.h" />
+    <ClInclude Include="..\..\src\settings_manager.h" />
+    <ClInclude Include="..\..\src\shape_object.h" />
+    <ClInclude Include="..\..\src\state_component.h" />
+    <ClInclude Include="..\..\src\systeminfo.h" />
+    <ClInclude Include="..\..\src\graphics_manager.h" />
+    <ClInclude Include="..\..\src\util\json_file.h" />
+    <ClInclude Include="..\..\src\util\logging.h" />
+    <ClInclude Include="..\..\src\util\math_utils.h" />
+    <ClInclude Include="..\..\src\util\svg_data.h" />
+    <ClInclude Include="..\..\src\util\svg_defs.h" />
+    <ClInclude Include="..\..\src\util\svg_element.h" />
+    <ClInclude Include="..\..\src\util\svg_group.h" />
+    <ClInclude Include="..\..\src\util\t_hash.h" />
+    <ClInclude Include="..\..\src\util\t_iterator.h" />
+    <ClInclude Include="..\..\src\util\t_point.h" />
+    <ClInclude Include="..\..\src\util\t_rect.h" />
+    <ClInclude Include="..\..\src\util\t_tree.h" />
+    <ClInclude Include="..\..\src\util\utils.h" />
+    <ClInclude Include="..\..\src\util\xml_attribute.h" />
+    <ClInclude Include="..\..\src\util\xml_defs.h" />
+    <ClInclude Include="..\..\src\util\xml_document.h" />
+    <ClInclude Include="..\..\src\util\xml_node.h" />
+    <ClInclude Include="..\..\src\window_event_manager.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
