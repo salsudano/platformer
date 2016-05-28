@@ -1,0 +1,327 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Util">
+      <UniqueIdentifier>{50fa55d8-ef62-4249-97e6-43312a1c96ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\Data Structures">
+      <UniqueIdentifier>{f88a96d7-eace-4c5c-a06f-8355dcc7ec14}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\SVG">
+      <UniqueIdentifier>{e04f39ce-967e-448a-8b23-f14fa9aa5e54}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Util\XML">
+      <UniqueIdentifier>{8223fb4d-4623-43e7-b2a7-d338567983ad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data">
+      <UniqueIdentifier>{20e55890-08b8-45d4-b80c-bc8ccd3ac031}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Graphics">
+      <UniqueIdentifier>{ec254aeb-38ef-420c-9e67-ee8b0c5717fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Audio">
+      <UniqueIdentifier>{a5f80a38-ed9b-4203-86dd-151f60224e61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Settings">
+      <UniqueIdentifier>{70efbd78-2dcc-4dc5-9ea4-14fb4cb4d5cd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Window">
+      <UniqueIdentifier>{82dfdf8a-a649-4fe3-9f08-2c374d1f61f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Level">
+      <UniqueIdentifier>{dd9496c0-d2a7-492b-99f5-0ee92bde924d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Menu">
+      <UniqueIdentifier>{ad99d8b0-da2b-4e6f-9d92-2b17eaae0d6e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object">
+      <UniqueIdentifier>{29454b61-ff85-4fe8-931d-753fcfc540e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Types">
+      <UniqueIdentifier>{ed3391d3-2fd4-43d6-a0fe-62078c8206fc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Types\Character">
+      <UniqueIdentifier>{ed93d17f-31a6-48ee-ae05-9bb9ffd6b889}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Types\Inactive">
+      <UniqueIdentifier>{15d70594-16d7-4c76-8c97-be683fe925c9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Types\Interactive">
+      <UniqueIdentifier>{a7873e2f-de5b-4f7c-aad9-70b8f45dd138}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Types\Shape">
+      <UniqueIdentifier>{53ee27f1-7489-4802-87da-9598c01e1182}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Types\Level">
+      <UniqueIdentifier>{d3809ef7-413d-439d-9684-95286e68d1ef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Components">
+      <UniqueIdentifier>{379962f2-f528-42e8-acda-bfe71b09bcfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Components\Physics">
+      <UniqueIdentifier>{00da066b-f644-4d74-9421-3fed905d60c8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Components\State">
+      <UniqueIdentifier>{5684994a-1eb7-4a34-96b3-86091926120c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Components\Input">
+      <UniqueIdentifier>{4ab51a79-0fc3-4f66-be53-5b1c1a1aa9b8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Traits">
+      <UniqueIdentifier>{3b4b2c22-4dd9-493a-a9f4-9298513053d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Traits\Shape">
+      <UniqueIdentifier>{3042ebb5-4319-4727-8e8a-a2ab31519f07}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Traits\Style">
+      <UniqueIdentifier>{d397386a-51ff-4dd8-989f-80fd5da8efa1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\States">
+      <UniqueIdentifier>{e2703fb4-50cf-47ad-ab91-75608ab38622}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\States\Character">
+      <UniqueIdentifier>{782558e8-a3c5-4000-8497-bde6e4398d5a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\States\Interactive">
+      <UniqueIdentifier>{6aa5862a-14ea-416d-a04d-efe54c854b0f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\States\Inactive">
+      <UniqueIdentifier>{f61c2a96-2744-4521-8cfe-3b3c76131bd7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Data\Object\Actions">
+      <UniqueIdentifier>{65290fd0-36b8-48b2-a20f-5e6c57e4a3f2}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\src\graphics_manager.cpp">
+      <Filter>Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\application_settings.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\systeminfo.cpp">
+      <Filter>Settings</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\window_event_manager.cpp">
+      <Filter>Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\character_object.cpp">
+      <Filter>Data\Object\Types\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_object.cpp">
+      <Filter>Data\Object\Types\Interactive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\inactive_object.cpp">
+      <Filter>Data\Object\Types\Inactive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\xml_defs.cpp">
+      <Filter>Util\XML</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\util\svg_defs.cpp">
+      <Filter>Util\SVG</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\data_manager.cpp">
+      <Filter>Data</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\physics_component.cpp">
+      <Filter>Data\Object\Components\Physics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\level_data.cpp">
+      <Filter>Data\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\menu_data.cpp">
+      <Filter>Data\Menu</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\component.cpp">
+      <Filter>Data\Object\Components</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\game_object.cpp">
+      <Filter>Data\Object\Types</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\shape_object.cpp">
+      <Filter>Data\Object\Types\Shape</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\inactive_states.cpp">
+      <Filter>Data\Object\States\Inactive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\interactive_states.cpp">
+      <Filter>Data\Object\States\Interactive</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\level_object.cpp">
+      <Filter>Data\Object\Types\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\application.cpp" />
+    <ClCompile Include="..\..\src\game.cpp" />
+    <ClCompile Include="..\..\src\main.cpp" />
+    <ClCompile Include="..\..\src\camera.cpp">
+      <Filter>Data\Level</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\character_controllable_states.cpp">
+      <Filter>Data\Object\States\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\character_ai_states.cpp">
+      <Filter>Data\Object\States\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\character_states.cpp">
+      <Filter>Data\Object\States\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\src\character_input_component.cpp">
+      <Filter>Data\Object\Components\Input</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\src\graphics_manager.h">
+      <Filter>Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\application_settings.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\systeminfo.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\window_event_manager.h">
+      <Filter>Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\character_object.h">
+      <Filter>Data\Object\Types\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\interactive_object.h">
+      <Filter>Data\Object\Types\Interactive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\inactive_object.h">
+      <Filter>Data\Object\Types\Inactive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\math_utils.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\t_hash.h">
+      <Filter>Util\Data Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\t_point.h">
+      <Filter>Util\Data Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\t_rect.h">
+      <Filter>Util\Data Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\t_tree.h">
+      <Filter>Util\Data Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\logging.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\t_iterator.h">
+      <Filter>Util\Data Structures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game_object_defs.h">
+      <Filter>Data\Object\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\game_object.h">
+      <Filter>Data\Object\Types</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\svg_data.h">
+      <Filter>Util\SVG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\svg_element.h">
+      <Filter>Util\SVG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\svg_group.h">
+      <Filter>Util\SVG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\svg_defs.h">
+      <Filter>Util\SVG</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\xml_document.h">
+      <Filter>Util\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\xml_attribute.h">
+      <Filter>Util\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\xml_node.h">
+      <Filter>Util\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\xml_defs.h">
+      <Filter>Util\XML</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\data_manager.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\data_defs.h">
+      <Filter>Data</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\physics_component.h">
+      <Filter>Data\Object\Components\Physics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\state_component.h">
+      <Filter>Data\Object\Components\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\level_data.h">
+      <Filter>Data\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\menu_data.h">
+      <Filter>Data\Menu</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\component.h">
+      <Filter>Data\Object\Components</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\object_shape.h">
+      <Filter>Data\Object\Traits\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\object_style.h">
+      <Filter>Data\Object\Traits\Style</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\shape_object.h">
+      <Filter>Data\Object\Types\Shape</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\object_state.h">
+      <Filter>Data\Object\States</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\character_states.h">
+      <Filter>Data\Object\States\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\inactive_states.h">
+      <Filter>Data\Object\States\Inactive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\interactive_states.h">
+      <Filter>Data\Object\States\Interactive</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\input_component.h">
+      <Filter>Data\Object\Components\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\level_object.h">
+      <Filter>Data\Object\Types\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\application.h" />
+    <ClInclude Include="..\..\src\game.h" />
+    <ClInclude Include="..\..\src\util\utils.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\camera.h">
+      <Filter>Data\Level</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\character_actions.h">
+      <Filter>Data\Object\Actions</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\character_input_component.h">
+      <Filter>Data\Object\Components\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\character_state_component.h">
+      <Filter>Data\Object\Components\State</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\character_controllable_states.h">
+      <Filter>Data\Object\States\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\character_ai_states.h">
+      <Filter>Data\Object\States\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\settings_manager.h">
+      <Filter>Settings</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\src\util\json_file.h">
+      <Filter>Util</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
