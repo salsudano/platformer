@@ -1,0 +1,7 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LocalDebuggerEnvironment>PATH=%PATH%;$(SolutionDir)\..\libraries\SFML_2_3_2\bin\;$(SolutionDir)\..\libraries\libxml2_2_7_8_win32\bin\;$(SolutionDir)\..\libraries\iconv_1_9_2_win32\bin\</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+</Project>
