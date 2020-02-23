@@ -36,7 +36,7 @@ bool DataManager::LoadLevel(GameData::Level::IDs levelID, const sf::Vector2u& vi
 			case GameData::Level::Test:
 			{
 				CharacterObject* pHero = new ControllableCharacter();
-				std::string svgPath = "C:/Users/Sal/Documents/Programming/trunk/support/levels/Level_Test.svg";
+				std::string svgPath = "../../support/levels/Level_Test.svg";
 				m_pActiveLevel = new LevelData(m_Settings, pHero, svgPath);
 				break;
 			}

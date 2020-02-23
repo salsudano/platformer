@@ -3,7 +3,7 @@
 
 InactiveObjectState::InactiveObjectState() 
 { 
-	AddTexture("C:/Users/Sal/Documents/Programming/trunk/support/game/textures/object/inactive/background/mountains.png");
+	AddTexture("../../support/game/textures/object/inactive/background/mountains.png");
 }
 
 InactiveObjectState::~InactiveObjectState() 
@@ -30,7 +30,7 @@ bool StillInactiveState::Update(GameObject* pGameObject, const LevelData* pLevel
 
 BackgroundState::BackgroundState() 
 {
-	AddTexture("C:/Users/Sal/Documents/Programming/trunk/support/game/textures/object/inactive/background/mountains.png");
+	AddTexture("../../support/game/textures/object/inactive/background/mountains.png");
 }
 BackgroundState::~BackgroundState() { }
 
